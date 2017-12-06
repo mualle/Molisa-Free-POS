@@ -3,8 +3,91 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Infrastructure.Data", "Molisa.Backend.Infrastructure.Data\Molisa.Backend.Infrastructure.Data.csproj", "{215F4604-759D-417D-A041-EDC9FA5C102D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Infrastructure.Common", "Molisa.Backend.Infrastructure.Common\Molisa.Backend.Infrastructure.Common.csproj", "{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{06F7F7BE-3E3B-4FF2-A310-417F205AE87E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{9B60E81E-7F71-49B6-B64C-9CB33FC5882D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B746B0A7-A93A-4179-A0D8-57D590C73684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Domain.Model", "Molisa.Backend.Domain.Model\Molisa.Backend.Domain.Model.csproj", "{1FE724E0-BB4B-411D-958A-849719D8291F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{809C4EE7-9DB5-4E53-9A7B-6E385D10AEA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{B3AF87C1-7967-4979-A626-E8343A4646F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Desktop", "Molisa.Desktop\Molisa.Desktop.csproj", "{DD8059BE-517F-4A80-B0B3-EF3300F68C04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{91BEBFD1-24B6-46C1-96C7-A61D2B9792CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Application.Service", "Molisa.Backend.Application.Service\Molisa.Backend.Application.Service.csproj", "{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Application.Dto", "Molisa.Backend.Application.Dto\Molisa.Backend.Application.Dto.csproj", "{D3D0AD31-4094-4B08-86FF-355CC767CB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Infrastructure.Application", "Molisa.Backend.Infrastructure.Application\Molisa.Backend.Infrastructure.Application.csproj", "{F17FF702-758B-442B-8278-DB6DC66EA136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.Domain.Service", "Molisa.Backend.Domain.Service\Molisa.Backend.Domain.Service.csproj", "{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molisa.Backend.WebApi", "Molisa.Backend.WebApi\Molisa.Backend.WebApi.csproj", "{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215F4604-759D-417D-A041-EDC9FA5C102D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215F4604-759D-417D-A041-EDC9FA5C102D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215F4604-759D-417D-A041-EDC9FA5C102D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215F4604-759D-417D-A041-EDC9FA5C102D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE724E0-BB4B-411D-958A-849719D8291F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE724E0-BB4B-411D-958A-849719D8291F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE724E0-BB4B-411D-958A-849719D8291F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE724E0-BB4B-411D-958A-849719D8291F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8059BE-517F-4A80-B0B3-EF3300F68C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8059BE-517F-4A80-B0B3-EF3300F68C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8059BE-517F-4A80-B0B3-EF3300F68C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8059BE-517F-4A80-B0B3-EF3300F68C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D0AD31-4094-4B08-86FF-355CC767CB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D0AD31-4094-4B08-86FF-355CC767CB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D0AD31-4094-4B08-86FF-355CC767CB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D0AD31-4094-4B08-86FF-355CC767CB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17FF702-758B-442B-8278-DB6DC66EA136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17FF702-758B-442B-8278-DB6DC66EA136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17FF702-758B-442B-8278-DB6DC66EA136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17FF702-758B-442B-8278-DB6DC66EA136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{215F4604-759D-417D-A041-EDC9FA5C102D} = {B746B0A7-A93A-4179-A0D8-57D590C73684}
+		{5CABD4BF-2C35-4BC8-804C-B2413E71C5BF} = {B746B0A7-A93A-4179-A0D8-57D590C73684}
+		{1FE724E0-BB4B-411D-958A-849719D8291F} = {06F7F7BE-3E3B-4FF2-A310-417F205AE87E}
+		{DD8059BE-517F-4A80-B0B3-EF3300F68C04} = {B3AF87C1-7967-4979-A626-E8343A4646F1}
+		{5AA46E5F-E9B0-477B-AAD4-A2857B9167BA} = {9B60E81E-7F71-49B6-B64C-9CB33FC5882D}
+		{D3D0AD31-4094-4B08-86FF-355CC767CB7F} = {9B60E81E-7F71-49B6-B64C-9CB33FC5882D}
+		{F17FF702-758B-442B-8278-DB6DC66EA136} = {B746B0A7-A93A-4179-A0D8-57D590C73684}
+		{F4DC2792-CEFC-40E1-B5C0-1E9B2483B7F5} = {06F7F7BE-3E3B-4FF2-A310-417F205AE87E}
+		{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF} = {91BEBFD1-24B6-46C1-96C7-A61D2B9792CF}
 	EndGlobalSection
 EndGlobal

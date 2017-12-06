@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77BE4F5A-3DB2-46F1-B5AF-C376A4FDC4BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Molisa.Backend.WebApi</RootNamespace>
+    <AssemblyName>Molisa.Backend.WebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Molisa.Backend.Application.Dto\Molisa.Backend.Application.Dto.csproj">
+      <Project>{d3d0ad31-4094-4b08-86ff-355cc767cb7f}</Project>
+      <Name>Molisa.Backend.Application.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Molisa.Backend.Application.Service\Molisa.Backend.Application.Service.csproj">
+      <Project>{5aa46e5f-e9b0-477b-aad4-a2857b9167ba}</Project>
+      <Name>Molisa.Backend.Application.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Molisa.Backend.Infrastructure.Application\Molisa.Backend.Infrastructure.Application.csproj">
+      <Project>{f17ff702-758b-442b-8278-db6dc66ea136}</Project>
+      <Name>Molisa.Backend.Infrastructure.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Molisa.Backend.Infrastructure.Common\Molisa.Backend.Infrastructure.Common.csproj">
+      <Project>{5cabd4bf-2c35-4bc8-804c-b2413e71c5bf}</Project>
+      <Name>Molisa.Backend.Infrastructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Molisa.Backend.Infrastructure.Data\Molisa.Backend.Infrastructure.Data.csproj">
+      <Project>{215f4604-759d-417d-a041-edc9fa5c102d}</Project>
+      <Name>Molisa.Backend.Infrastructure.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
